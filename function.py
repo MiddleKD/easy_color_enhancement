@@ -123,11 +123,10 @@ def handler(image, gamma=0.75, factor=1.7):
 
     enhanced = enhance_color(brightened, factor=factor)
 
-    cv2.imshow("src", src)
-    cv2.imshow("brightened", brightened)
-    cv2.imshow("enhanced", enhanced)
+    # cv2.imshow("src", src)
+    # cv2.imshow("brightened", brightened)
+    # cv2.imshow("enhanced", enhanced)
     return enhanced
-
 
 if __name__ == "__main__":
     import os

@@ -103,7 +103,7 @@ def handler(image, gamma=0.75, factor=1.7):
     - The factor parameter enhances the color saturation.
     """
     src = np.array(image)
-    src = resize_image(src)
+    # src = resize_image(src)
 
     YCrCb = cv2.cvtColor(src, cv2.COLOR_BGR2YCrCb)
     Y = YCrCb[:, :, 0]
